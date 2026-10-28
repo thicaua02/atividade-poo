@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f3;
+  color: #24332d;
+  line-height: 1.5;
+}
+.cabecalho {
+  padding: 32px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #176b55;
+}
+.cabecalho h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+.cabecalho p {
+  margin: 0;
+}
+.conteudo {
+  width: calc(100% - 32px);
+  max-width: 900px;
+  margin: 32px auto;
+}
+.lista-veiculos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cartao {
+  flex: 1 1 280px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #d4e2dc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(20 60 45 / 8%);
+}
+.cartao h2 {
+  margin-top: 0;
+  color: #176b55;
+}
+.tipo {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 10px;
+  color: #15533f;
+  background: #d9f2e7;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.detalhe {
+  margin: 8px 0;
+}
+.preco {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #d4e2dc;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.rodape {
+  padding: 20px;
+  text-align: center;
+  color: #52665d;
+  font-size: 0.9rem;
+}
+@media (max-width: 800px) {
+  .cabecalho h1 {
+    font-size: 1.6rem;
+  }
+  .cartao {
+    flex-basis: 100%;
+  }
+}
