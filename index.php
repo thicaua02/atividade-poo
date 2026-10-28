@@ -44,7 +44,12 @@ $moto = new Moto("Honda", "CG 160 Start 2026", 2000, 300);
                 </p>
                 
                 <p class="preco">
-                    Diária: R$ <?= $carro->calcularDiaria() ?> <!-- Exiba a diária formatada com duas casas decimais -->
+                    Diária: R$ <?= number_format(
+                        $carro->calcularDiaria(4500), 
+                        2, 
+                        ",",
+                        "."
+                    ) ?> <!-- Exiba a diária formatada com duas casas decimais -->
                 </p>
             </article>
 
@@ -66,7 +71,12 @@ $moto = new Moto("Honda", "CG 160 Start 2026", 2000, 300);
                 </p>
                 <p class="preco">
                     Diária: R$ <!-- Exiba a diária formatada com duas casas decimais -->
-                    <?= $moto->calcularDiaria() ?>
+                    <?= number_format(
+                        $carro->calcularDiaria(2250), 
+                        2, 
+                        ",",
+                        "."
+                    ) ?>
                 </p>
             </article>
         </section>

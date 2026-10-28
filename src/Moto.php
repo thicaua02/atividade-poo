@@ -12,8 +12,8 @@ class Moto extends Veiculo {
         return $this->cilindradas;
     }
 
-    public function calcularDiaria(): float
+    public function calcularDiaria(float $valorMensal): float
     {
-        return 70.00;
+        return $valorMensal / 30;
     }
 }

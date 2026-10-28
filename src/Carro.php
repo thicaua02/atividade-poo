@@ -12,8 +12,8 @@ class Carro extends Veiculo {
         return $this->quantidadePortas;
     }
 
-    public function calcularDiaria(): float
+    public function calcularDiaria(float $valorMensal): float
     {
-        return 150.00;
+        return $valorMensal / 30;
     }
 }

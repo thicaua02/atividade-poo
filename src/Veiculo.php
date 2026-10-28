@@ -34,5 +34,5 @@ abstract class Veiculo {
         $this->modelo = $modelo;   
     }
 
-    abstract function calcularDiaria (): float;
+    abstract function calcularDiaria (float $valorMensal): float;
 }
